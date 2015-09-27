@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2015.2.1 (64-bit)
+# SW Build 1302555 on Wed Aug  5 13:06:02 MDT 2015
+# IP Build 1291990 on Mon Jul 27 03:18:52 MDT 2015
+# Start of session at: Sat Sep 26 23:09:25 2015
+# Process ID: 2900
+# Log file: C:/Users/Kyle/Documents/CompArch/LED_blink/LED_blink.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/Kyle/Documents/CompArch/LED_blink/LED_blink.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Command: open_checkpoint design_1_wrapper_routed.dcp
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty:part0:1.1 available at C:/Xilinx/Vivado/2015.2/data/boards/board_files/arty/B.0/board.xml as part xc7a15ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:basys3:part0:1.1 available at C:/Xilinx/Vivado/2015.2/data/boards/board_files/basys3/C.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4:part0:1.1 available at C:/Xilinx/Vivado/2015.2/data/boards/board_files/nexys4/B.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4_ddr:part0:1.1 available at C:/Xilinx/Vivado/2015.2/data/boards/board_files/nexys4_ddr/C.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.1 available at C:/Xilinx/Vivado/2015.2/data/boards/board_files/nexys_video/A.0/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2.1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Kyle/Documents/CompArch/LED_blink/LED_blink.runs/impl_1/.Xil/Vivado-2900-E6430_KF/dcp/design_1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/Kyle/Documents/CompArch/LED_blink/LED_blink.runs/impl_1/.Xil/Vivado-2900-E6430_KF/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [C:/Users/Kyle/Documents/CompArch/LED_blink/LED_blink.runs/impl_1/.Xil/Vivado-2900-E6430_KF/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/Kyle/Documents/CompArch/LED_blink/LED_blink.runs/impl_1/.Xil/Vivado-2900-E6430_KF/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.347 . Memory (MB): peak = 454.688 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.347 . Memory (MB): peak = 454.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1302555
+open_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 454.688 ; gain = 265.418
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 795.719 ; gain = 341.031
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 26 23:09:51 2015...

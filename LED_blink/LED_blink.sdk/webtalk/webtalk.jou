@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# 
+# Start of session at: Sat Sep 26 23:15:02 2015
+# Process ID: 8904
+# Log file: C:/Users/Kyle/Documents/CompArch/LED_blink/LED_blink.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Kyle/Documents/CompArch/LED_blink/LED_blink.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
