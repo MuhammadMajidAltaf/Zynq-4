@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# 
+# Start of session at: Thu Oct 01 20:04:53 2015
+# Process ID: 7812
+# Log file: C:/Users/Kyle/Documents/Zynq/mp2_sandbox/mp2_sandbox.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Kyle/Documents/Zynq/mp2_sandbox/mp2_sandbox.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
