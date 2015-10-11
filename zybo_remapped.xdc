@@ -411,4 +411,3 @@
 ##IO_0_34
 #set_property PACKAGE_PIN R19 [get_ports vga_vs]
 #set_property IOSTANDARD LVCMOS33 [get_ports vga_vs]
-
