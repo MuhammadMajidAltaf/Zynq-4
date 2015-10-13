@@ -62,6 +62,7 @@ int init_spi(XSpi *SpiInstancePtr);
 void spi_write(XSpi *SpiInstancePtr, u8 addr, u8 value);
 u8 spi_read(XSpi *SpiInstancePtr, u8 addr);
 int init_gpio(XGpio *GpioInstancePtr);
+void delay(int n);
 
 int main()
 {
@@ -70,10 +71,13 @@ int main()
     init_spi(&SpiInstance);
     init_gpio(&GpioInstance);
 
-    XGpio_DiscreteWrite(&GpioInstance, LED_CHANNEL, 0x0);
+    u8 LED_data = 0x1;
+    XGpio_DiscreteWrite(&GpioInstance, LED_CHANNEL, LED_data);
+    delay(100000000);
 
     xil_printf("Tests started.\n\r");
-    XGpio_DiscreteWrite(&GpioInstance, LED_CHANNEL, 1<<1);
+    LED_data |= 0x1<<1;
+    XGpio_DiscreteWrite(&GpioInstance, LED_CHANNEL, LED_data);
     int i;
     for(i = 0; i < 100; i++){
 		u8 addr = i;
@@ -82,7 +86,12 @@ int main()
 		u8 res = spi_read(&SpiInstance, addr);
 		xil_printf("Wrote to %X. %X transmitted. %X received.\n\r", addr, value, res);
     }
-    //XGpio_DiscreteWrite(&GpioInstance, LED_CHANNEL, 1<<2);
+    LED_data |= 0x1<<2;
+    xil_printf("Tests complete. Please review results.\n\r");
+    XGpio_DiscreteWrite(&GpioInstance, LED_CHANNEL, LED_data);
+    delay(100000000);
+    LED_data |= 0x1<<3;
+    XGpio_DiscreteWrite(&GpioInstance, LED_CHANNEL, LED_data);
     cleanup_platform();
     return 0;
 }
@@ -143,4 +152,12 @@ int init_spi(XSpi *SpiInstancePtr){
 	XSpi_Start(SpiInstancePtr);
 	XSpi_IntrGlobalDisable(SpiInstancePtr);
 	return XST_SUCCESS;
+}
+
+void delay(int n){
+	int i;
+	volatile int k;
+	for(i = 0; i < n; i++){
+		k++;
+	}
 }
